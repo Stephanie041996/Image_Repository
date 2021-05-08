@@ -1,5 +1,8 @@
 class ImgsController < ApplicationController
   before_action :set_img, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :correct_user, only: %i[ edit update destroy ]
+
 
   # GET /imgs or /imgs.json
   def index
@@ -10,9 +13,15 @@ class ImgsController < ApplicationController
   def show
   end
 
+  def correct_user
+@img = current_user.imgs.find_by(id: params[:id])
+redirect_to imgs_path, notice:"Not Authorized to edit this Image" if @img.nil?
+  end
+
   # GET /imgs/new
   def new
-    @img = Img.new
+    # @img = current_user.img.build
+     @img = Img.new
   end
 
   # GET /imgs/1/edit
