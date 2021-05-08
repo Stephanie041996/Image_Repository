@@ -13,7 +13,7 @@
   <tbody>
     <% @imgs.each do |img| %>
       <tr>
-       <td><%= image_tag(pin.image) %></td>
+       <td><%= image_tag(img.image, style:"width:300px") %></td>
         <td><%= img.caption %></td>
         <td><%= link_to 'Show', img %></td>
         <td><%= link_to 'Edit', edit_img_path(img) %></td>
