@@ -1,0 +1,22 @@
+<h2>Search page</h2>
+
+<div class="container">
+  <div class="row">
+  
+      <% @imgs.each do |img| %>
+      <div class="card  col-sm-12 col-lg-3">
+    <div class="card-body p-1">
+        <%= image_tag(img.image, class: 'd-block w-100') %>
+
+         <p class="my-1"><%= img.caption %></p>
+         <div class="d-grid gap-2 d-md-flex justify-content-center">
+         <button  class="btn btn-dark"><%= link_to 'Show', img %></button>
+         <button  class="btn btn-dark"><%= link_to 'Edit', edit_img_path(img) %></button>
+         <button class="btn btn-dark><%= link_to 'Destroy', img, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+         </div>
+         </div>
+    </div>
+    <%end%>
+  
+  </div>
+  </div>
