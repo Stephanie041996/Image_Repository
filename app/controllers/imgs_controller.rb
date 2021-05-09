@@ -6,7 +6,7 @@ class ImgsController < ApplicationController
 
   # GET /imgs or /imgs.json
   def index
-    @imgs = Img.all
+    @imgs = Img.order(created_at: :desc).limit(20)
   end
 
   # GET /imgs/1 or /imgs/1.json

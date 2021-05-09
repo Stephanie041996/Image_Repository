@@ -1,6 +1,6 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Members only</a>
+<nav class="navbar  navbar-expand-lg navbar-light border-start-0 border-end-0 border-top-0 border-bottom-3 border border-3 ">
+  <div class="container">
+   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,11 +9,15 @@
         <li class="nav-item">
         <%= link_to 'Home', root_path, class:"nav-link active" %>
          </li>
-      <li class="nav-item">
+          
+         </li>
+     
+           <% if user_signed_in?%>
+
+            <li class="nav-item">
         <%= link_to 'Gallery', imgs_path, class:"nav-link active" %>
          </li>
         
-           <% if user_signed_in?%>
           <li class="nav-item">
           <%= link_to 'Upload Images', new_img_path, class:"nav-link active" %>
            </li>
@@ -29,19 +33,16 @@
         <li class="nav-item">
           <%= link_to 'Sign in', new_user_session_path, class:"nav-link" %>
         </li>
-        <li button class="btn btn-sm btn-secondary me-2" type="button">
-          <%= link_to 'Sign up', new_user_registration_path  %>
+        <li class="nav-item">
+          <%= link_to 'Sign up', new_user_registration_path, class: "nav-link"  %>
         </li>
         <% end %>
 
-         
-
-       
 
       </ul>
         <form class="d-flex" action="/search">
         <input class="form-control me-2" name ="q" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-primary btn-lg rounded-pill" type="submit">Search</button>
       </form>
      
     </div>
