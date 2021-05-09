@@ -1,13 +1,4 @@
-
-<div class="container d-flex justify-content-center ">
-
- <div class="card text-center col-sm-12 col-lg-9">
-
-   <div class="card-header">
-
-<h2>Edit My account</h2>
-<br></div>
-    <div class="card-body p-1 ">
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -64,9 +55,3 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
-</div>
-</div>
-</div>
-  </div>
-  </div>
-  </div>
