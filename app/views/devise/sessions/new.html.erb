@@ -1,4 +1,18 @@
-<h2>Log in</h2>
+<div class="container ">
+
+ <div class="row">
+
+ <div class="col-md-6  d-flex justify-content-center ">
+<%= image_tag "test4.jpeg"%>
+ </div>
+    <div class="col-md-6">
+ <div class="card text-center col-sm-12 col-lg-9">
+
+   <div class="card-header">
+
+<h3>Log In</h3>
+<br></div>
+    <div class="card-body p-1 ">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -22,5 +36,13 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
+ <h4> Dont have an account?</h4>
 
 <%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
+  </div>
+  </div>
+  </div>
+ 
