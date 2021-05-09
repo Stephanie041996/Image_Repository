@@ -1,9 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="container d-flex justify-content-center">
+ <div class="card  col-sm-12 col-lg-9">
+   <div class="card-body p-1 h-75 ">
+
+<%= image_tag(@img.image,class: 'd-block w-100 h-100 d-inline-block' )%>
+</div>
+ <div class="card-body p-1">
+<p class="my-1 fw-normal fs-6">
   <strong>Caption:</strong>
   <%= @img.caption %>
 </p>
-
-<%= link_to 'Edit', edit_img_path(@img) %> |
-<%= link_to 'Back', imgs_path %>
+         <div class="d-grid gap-2 d-md-flex justify-content-center">
+ <button class="btn btn"><%= link_to 'Edit', edit_img_path(@img) %></button>
+ <button class="btn btn"><%= link_to 'Back', imgs_path %></button>
+</div>
+</div>
+</div>
+</div>
