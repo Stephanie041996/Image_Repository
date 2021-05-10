@@ -4,8 +4,9 @@ This is an Image Repository App built with Ruby on Rails. The App is called Imag
 You may only Edit or Delete images if you are the one who posted it.
 
 
-![screenshot](./Screenshotfrom2021-05-09 22-07-11.png)
-![screenshot](./Screenshotfrom2021-05-09 22-08-15.png)
+![screenshot](./app_screenshot1.png)
+
+![screenshot](./app_screenshot.png)
 
 Additional description of the project and its features.
 
