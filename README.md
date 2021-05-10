@@ -1,6 +1,6 @@
 # Image Repository App
 
-This is an Image Repository App built with Ruby on Rails. The App is called Image Hub and is a phone sharing platform. It is to help people experince new places through photos. search for Images of places you may want to travel and also share your own images and add a location in the caption.
+This is an Image Repository App built with Ruby on Rails. The App is called Image Hub and is a photo sharing platform. It is to help people experince new places through photos. search for Images of places you may want to travel and also share your own images and add a location in the caption.
 You may only Edit or Delete images if you are the one who posted it.
 
 View live page -> https://boiling-lake-63757.herokuapp.com/imgs/5
