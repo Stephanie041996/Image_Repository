@@ -3,6 +3,7 @@
 This is an Image Repository App built with Ruby on Rails. The App is called Image Hub and is a phone sharing platform. It is to help people experince new places through photos. search for Images of places you may want to travel and also share your own images and add a location in the caption.
 You may only Edit or Delete images if you are the one who posted it.
 
+View live page -> https://boiling-lake-63757.herokuapp.com/imgs/5
 
 ![screenshot](./app_screenshot1.png)
 
@@ -16,8 +17,8 @@ Additional description of the project and its features.
 - Ruby on Rails
 
 ### Setup
-
-- To use the application, please clone the repository to your local computer `git@github.com:Stephanie041996/Image_Repository.git` then cd to directory `cd Image_Hub
+- Open your terminal on your computer
+- To use the application, please clone the repository to your local computer `git clone git@github.com:Stephanie041996/Image_Repository.git` then cd to directory `cd Image_Hub
 - Use `bundle install` to receive gems required for this project
 - Use `yarn` to receive all the JavaScript packages for this project
 - Run `rails db:setup` to create the database, run migration files, and install some sample data
