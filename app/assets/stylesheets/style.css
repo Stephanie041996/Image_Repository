@@ -1,21 +1,25 @@
-
-
 .nav-item {
     padding-right: 30px;
     font-size: 20px;
     align-content: center;
 
 }
-
-.navbar{
-
-    
+.nav-link:hover{
+  color: rgb(147, 188, 235) !important; 
 }
+
+a:hover {
+  color: #fff;
+  background-color:whitesmoke;
+}
+
+.ul.nav li:hover { 
+  color: rgb(147, 188, 235) !important; 
+}
+
 .navbar-brand{
     font-style: italic;
     font-size: 25px;
-
-
 }
 
 div.b {
