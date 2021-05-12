@@ -6,7 +6,7 @@
       <% @imgs.each do |img| %>
       <div class="card  col-sm-12 col-lg-3">
     <div class="card-body p-1 h-100 ">
-<%= image_tag(img.image, class: 'd-block w-100') %>
+<%= image_tag(cloudinary_url(@img.image.key), class: 'd-block w-100') %>
     </div>
     <div class="card-body p-1">
          <p class="my-1 fw-normal fs-6"><%= img.caption %></p>

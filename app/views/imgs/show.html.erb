@@ -4,7 +4,7 @@
  <div class="card  col-sm-12 col-lg-9">
    <div class="card-body p-1 h-75 ">
 
-<%= image_tag(@img.image,class: 'd-block w-100 h-100 d-inline-block' )%>
+<%= image_tag(cloudinary_url(@img.image.key),class: 'd-block w-100 h-100 d-inline-block' )%>
 </div>
  <div class="card-body p-1">
 <p class="my-1 fw-normal fs-6">

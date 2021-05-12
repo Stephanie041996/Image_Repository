@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dgpiwatju
+  api_key: '325289941718634'
+  api_secret: IGd5NG11H-TFj7P3EJmArftt0hg
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dgpiwatju
+  api_key: '325289941718634'
+  api_secret: IGd5NG11H-TFj7P3EJmArftt0hg
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dgpiwatju
+  api_key: '325289941718634'
+  api_secret: IGd5NG11H-TFj7P3EJmArftt0hg
+  enhance_image_tag: true
+  static_file_support: false
