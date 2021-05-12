@@ -1,41 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-
-
-<!--table>
-  <thead>
-    <tr>
-      <th>Caption</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @imgs.each do |img| %>
-      <tr>
-       <td><%= image_tag(img.image, style:"width:300px") %></td>
-        <td><%= img.caption %></td>
-        <td><%= link_to 'Show', img %></td>
-        <td><%= link_to 'Edit', edit_img_path(img) %></td>
-        <td><%= link_to 'Destroy', img, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Img', new_img_path %>-->
-
-
-
 <div class="container">
   <div class="row">
   
       <% @imgs.each do |img| %>
       <div class="card  col-sm-12 col-lg-3">
         <div class="card-body p-1 h-100 ">
-      <%= image_tag(img.image, class: 'd-block w-100 h-100 d-inline-block') %>
+      <%= image_tag(cloudinary_url(img.image.key), class: 'd-block w-100 h-100 d-inline-block') %>
       </div>
     <div class="card-body p-1">
          <p class="my-1 fw-normal fs-6"><%= img.caption %></p>

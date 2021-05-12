@@ -19,8 +19,7 @@ redirect_to imgs_path, notice:"Not Authorized to edit this Image" if @img.nil?
   end
 
   def search
-    @imgs = Img.where("caption LIKE?", "%" + params[:q] + "%")
-
+    @imgs = Img.where("lower(caption) LIKE?", "%" + params[:q] + "%")
   end
 
   # GET /imgs/new
